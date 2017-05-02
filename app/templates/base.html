@@ -1,0 +1,20 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'base.css' %}" />
+
+<html>
+    <header>{%block header%}header{%endblock%}</header>
+        <nav>
+            <ul>
+                <li><a href="google.com">link</a></li>
+                <li><a href="google.com">link2</a></li>
+                <li><a href="google.com">link3</a></li>
+            </ul>
+        </nav>
+    <body>
+        <h1>{%block title%}title{%endblock%}</h1>
+        <p>
+        {% block body%} body{% endblock%}
+        </p>
+    </body>
+</html>
